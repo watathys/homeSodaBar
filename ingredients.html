@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingredients | The Ultimate Kazzi Soda</title>
+    <link rel="icon" href="images/kazziFavicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <!-- MailerLite Universal -->
+    <script>
+        (function(w,d,e,u,f,l,n){w[f]=w[f]||function(){(w[f].q=w[f].q||[])
+        .push(arguments);},l=d.createElement(e),l.async=1,l.src=u,
+        n=d.getElementsByTagName(e)[0],n.parentNode.insertBefore(l,n);})
+        (window,document,'script','https://assets.mailerlite.com/js/universal.js','ml');
+        ml('account', '2155993');
+    </script>
+    <!-- End MailerLite Universal -->
+    <style>
+        .ingredient-card {
+            background: white;
+            padding: 40px 32px;
+            border-radius: var(--radius-md);
+            border: 1px solid rgba(0,0,0,0.03);
+            text-align: left;
+        }
+        .ingredient-card h3 {
+            font-size: 1.8rem;
+            margin-bottom: 24px;
+            color: var(--swig-red);
+            border-bottom: 2px solid var(--swig-gray);
+            padding-bottom: 12px;
+        }
+        .ingredient-group {
+            margin-bottom: 24px;
+        }
+        .ingredient-group h4 {
+            font-size: 1.1rem;
+            margin-bottom: 8px;
+            color: var(--swig-black);
+        }
+        .ingredient-group ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .ingredient-group li {
+            position: relative;
+            padding-left: 24px;
+            margin-bottom: 8px;
+            color: #666;
+            font-size: 1rem;
+        }
+        .ingredient-group li::before {
+            content: "\f00c";
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            position: absolute;
+            left: 0;
+            color: var(--swig-red);
+            font-size: 0.8rem;
+            top: 4px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo"><a href="index.html">Kazzi<span class="highlight">Soda</span></a></div>
+            <ul class="nav-links">
+                <li><a href="index.html#how-it-works">Materials</a></li>
+                <li><a href="ingredients.html" style="color: var(--swig-red);">Ingredients</a></li>
+                <li><a href="javascript:void(0)" class="btn-nav open-modal">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero" style="padding: 60px 0 40px; text-align: center;">
+        <div class="container">
+            <div class="hero-text" style="width: 100%; max-width: 800px; margin: 0 auto;">
+                <h1>The <span class="text-red">Pantry</span> List</h1>
+                <p>You don't need a warehouse of supplies. Here are the essentials to turn your kitchen into a pro soda shop.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Essentials Section (Starter Pack) -->
+    <section class="container" style="margin-bottom: 80px; padding-top: 40px;">
+        <div style="text-align: left; margin-bottom: 50px;">
+            <h2 style="font-size: 3rem; margin-bottom: 16px;">The "Starter Pack"</h2>
+            <p style="color: #666; font-size: 1.2rem; max-width: 600px; margin: 0;">With just these few ingredients, you can make <span style="color: var(--swig-red); font-weight: 800;">100% of our Top 15 Fan Favorites</span>.</p>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 60px;">
+            
+            <!-- Syrups Row -->
+            <div class="step-row" style="margin-bottom: 0; gap: 40px;">
+                <div class="step-content" style="text-align: left;">
+                    <h3 style="color: var(--swig-red); border-bottom: 2px solid var(--swig-gray); padding-bottom: 15px; margin-bottom: 25px; font-size: 1.8rem;">1. The Syrups</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 24px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.2rem; margin-bottom: 4px;">Coconut</strong>
+                            <span style="color: #666; font-size: 1rem; line-height: 1.4;">The foundation for almost every tropical or "Utah-style" drink.</span>
+                        </li>
+                        <li style="margin-bottom: 24px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.2rem; margin-bottom: 4px;">Vanilla</strong>
+                            <span style="color: #666; font-size: 1rem; line-height: 1.4;">Essential for smoothing out energy drinks and creating "creamsicle" profiles.</span>
+                        </li>
+                        <li style="margin-bottom: 24px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.2rem; margin-bottom: 4px;">Peach</strong>
+                            <span style="color: #666; font-size: 1rem; line-height: 1.4;">The #1 favorite for fruit-based colas and clear sodas.</span>
+                        </li>
+                        <li style="margin-bottom: 24px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.2rem; margin-bottom: 4px;">Raspberry</strong>
+                            <span style="color: #666; font-size: 1rem; line-height: 1.4;">Provides the tartness needed for "berry" blends and the popular Dr. Pepper mixes.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="step-image" style="text-align: center;">
+                    <img src="images/syrups.png" alt="Syrups" style="width: 60%;">
+                </div>
+            </div>
+
+            <!-- Fresh & Creamy Header -->
+             <div style="margin-bottom: -40px;">
+                <h3 style="color: var(--swig-red); border-bottom: 2px solid var(--swig-gray); padding-bottom: 15px; margin-bottom: 25px; font-size: 1.8rem;">2. The Fresh & Creamy</h3>
+            </div>
+
+            <!-- Acid Row -->
+            <div class="step-row" style="margin-bottom: 0; gap: 40px;">
+                <div class="step-content" style="text-align: left;">
+                    <h4 style="color: var(--swig-black); margin-bottom: 16px; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;">The "Acid" (Fresh Citrus)</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 20px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.1rem; margin-bottom: 4px;">Fresh Limes</strong>
+                            <span style="color: #666; font-size: 1rem;">Essential for The Dirty Doc, The Founder, and The Loaded Diet.</span>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.1rem; margin-bottom: 4px;">Fresh Lemons</strong>
+                            <span style="color: #666; font-size: 1rem;">Used in several refreshing Sprite and Ginger Ale mixes.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="step-image" style="text-align: center;">
+                    <img src="images/lemonLime.png" alt="Fresh Citrus" style="width: 60%;">
+                </div>
+            </div>
+
+            <!-- Dirty Row -->
+            <div class="step-row" style="margin-bottom: 0; gap: 40px;">
+                <div class="step-content" style="text-align: left;">
+                    <h4 style="color: var(--swig-black); margin-bottom: 16px; font-size: 1.2rem; text-transform: uppercase; letter-spacing: 1px;">The "Dirty" (Dairy)</h4>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 20px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.1rem; margin-bottom: 4px;">Sweet Cream Creamer</strong>
+                            <span style="color: #666; font-size: 1rem;">The secret to the thick, marbled "cloud" effect.</span>
+                        </li>
+                        <li style="margin-bottom: 20px;">
+                            <strong style="color: var(--swig-black); display: block; font-size: 1.1rem; margin-bottom: 4px;">Half & Half</strong>
+                            <span style="color: #666; font-size: 1rem;">Used for a lighter, smoother texture in drinks like The Islander or The Founder.</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="step-image" style="text-align: center;">
+                    <img src="images/dairy.png" alt="Dairy" style="width: 60%;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- The Full Pantry Section (White Background) -->
+    <section style="background: var(--swig-white); padding: 100px 0; border-top: 1px solid var(--swig-gray);">
+        <div class="container">
+            <div class="section-header" style="text-align: center; margin-bottom: 60px;">
+                <h2 style="font-size: 3rem; margin-bottom: 10px;">The Full Pantry</h2>
+                <p style="color: #666; font-size: 1.2rem; font-weight: 500;">Want to go beyond the basics? Here's everything else.</p>
+            </div>
+            
+            <div class="why-grid" style="grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: start; gap: 40px;">
+                
+                <!-- Syrups & Sauces -->
+                <div class="ingredient-card">
+                    <h3>Syrups & Sauces</h3>
+                    
+                    <div class="ingredient-group">
+                        <h4 style="color: var(--swig-red);">The "Specialty" Syrups</h4>
+                        <ul>
+                            <li>Strawberry</li>
+                            <li>Pineapple</li>
+                        </ul>
+                    </div>
+
+                    <div class="ingredient-group">
+                        <h4 style="color: var(--swig-red);">The Sauces</h4>
+                        <ul>
+                            <li>Chocolate Sauce</li>
+                            <li>Caramel Sauce</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- The "Dirty" Creams -->
+                <div class="ingredient-card">
+                    <h3>Extra Creams</h3>
+                    <div class="ingredient-group">
+                        <ul>
+                            <li><strong>Coconut Cream</strong><br><small>Specifically canned or "Coco Real" cream of coconut squeeze bottles.</small></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fresh Fruit & Add-ins -->
+                <div class="ingredient-card">
+                    <h3>Fruit & Ice</h3>
+                    <div class="ingredient-group">
+                        <ul>
+                            <li><strong>Frozen Berry Medley</strong><br><small>Specifically raspberries and blackberries.</small></li>
+                            <li><strong>Pebble Ice</strong><br><small>The "soda shop" standard, but cubes work too.</small></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Closing Statement -->
+            <div style="text-align: center; margin-top: 100px; padding: 60px; background: var(--swig-gray); border-radius: var(--radius-lg);">
+                <h2 style="font-size: 3.5rem; line-height: 1; margin-bottom: 20px;">That's it!</h2>
+                <p style="font-size: 1.5rem; font-weight: 600; color: var(--text-main); max-width: 700px; margin: 0 auto;">That's all you need to make every single recipe in our Recipe Deck.</p>
+                <div style="margin-top: 30px; color: var(--swig-red); font-size: 2rem;">
+                    <i class="fa-solid fa-check-double"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="expert-section">
+        <div class="container">
+            <div class="expert-card" style="background-color: var(--swig-red); border-radius: var(--radius-lg); padding: 80px 40px; text-align: center; color: white;">
+                <div class="expert-content" style="max-width: 600px; margin: 0 auto;">
+                    <h2 style="color: white; font-size: 3.5rem; margin-bottom: 20px;">Ready to Pour?</h2>
+                    <p style="font-size: 1.2rem; margin-bottom: 40px; font-weight: 500;">Grab the deck to see how these simple ingredients combine into 50+ viral drinks.</p>
+                    <a href="javascript:void(0)" class="btn btn-white open-modal" style="display: inline-block; padding: 16px 40px; background-color: white; color: var(--swig-red); font-weight: 800; border-radius: var(--radius-pill); text-transform: uppercase;">Get the Recipes</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="deck-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="font-size: 2.5rem; margin-bottom: 15px;">Ready to Pour?</h2>
+            <p style="font-size: 1.1rem; color: #666; margin-bottom: 25px;">Grab the deck to see how these simple ingredients combine into 50+ viral drinks.</p>
+            <div class="ml-embedded" data-form="6o2I0M"></div>
+        </div>
+    </div>
+
+    <section id="waitlist" class="waitlist-section">
+        <div class="container">
+            <div class="ml-embedded" data-form="6o2I0M"></div>
+        </div>
+    </section>
+
+    <div id="deck-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="font-size: 2.5rem; margin-bottom: 15px;">Ready to Pour?</h2>
+            <p style="font-size: 1.1rem; color: #666; margin-bottom: 25px;">Grab the deck to see how these simple ingredients combine into 50+ viral drinks.</p>
+            <div class="ml-embedded" data-form="6o2I0M"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">KazziSoda</div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2026 KazziSoda. All rights reserved.</p>
+            <p style="font-size: 0.8rem; color: #888; margin-top: 10px;">As an Amazon Associate, I earn from qualifying purchases.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('deck-modal');
+            const closeBtn = document.querySelector('.close-modal');
+            const openBtns = document.querySelectorAll('.open-modal');
+
+            openBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            if(closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            }
+
+            window.addEventListener('click', function(e) {
+                if (e.target == modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('deck-modal');
+            const closeBtn = document.querySelector('.close-modal');
+            const openBtns = document.querySelectorAll('.open-modal');
+
+            openBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            if(closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            }
+
+            window.addEventListener('click', function(e) {
+                if (e.target == modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
