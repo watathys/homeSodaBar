@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Limeade Crunch | Kazzi Soda Recipe</title>
+    <link rel="icon" href="../images/kazziFavicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="../styles.css">
+    <style>
+        .recipe-page {
+            padding: 60px 0 80px;
+            min-height: 60vh;
+        }
+        .recipe-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+        .recipe-header h1 {
+            font-size: 3.5rem;
+            margin-bottom: 20px;
+            line-height: 1;
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 700;
+            color: var(--swig-black);
+            text-transform: uppercase;
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .back-link:hover {
+            color: var(--swig-red);
+        }
+        .video-container {
+            max-width: 600px;
+            margin: 0 auto;
+            aspect-ratio: 9/16;
+            background: var(--swig-gray);
+            border-radius: var(--radius-lg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+        .video-placeholder {
+            text-align: center;
+            color: #666;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+        /* When you add YouTube video, replace .video-placeholder with an iframe:
+        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" ...></iframe>
+        */
+        @media (max-width: 600px) {
+            .recipe-header h1 {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="container nav-container">
+            <div class="logo"><a href="../index.html">Kazzi<span class="highlight">Soda</span></a></div>
+            <ul class="nav-links">
+                <li><a href="../index.html#recipes">Recipes</a></li>
+                <li><a href="../index.html#how-it-works">Materials</a></li>
+                <li><a href="../ingredients.html">Ingredients</a></li>
+                <li><a href="javascript:void(0)" class="btn-nav open-modal">Order Now</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="recipe-page">
+            <div class="recipe-header">
+                <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Recipes</a>
+                <h1>Limeade Crunch</h1>
+            </div>
+
+            <div class="video-container">
+                <div class="video-placeholder">
+                    Instructional video still being created, check back soon
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="deck-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2 style="font-size: 2.5rem; margin-bottom: 15px;">Ready to Pour?</h2>
+            <p style="font-size: 1.1rem; color: #666; margin-bottom: 25px;">Grab the deck to see how these simple ingredients combine into 50+ viral drinks.</p>
+            <div class="ml-embedded" data-form="6o2I0M"></div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-logo">KazziSoda</div>
+            <div class="social-links">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+            <p>&copy; 2026 KazziSoda. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const modal = document.getElementById('deck-modal');
+            const closeBtn = document.querySelector('.close-modal');
+            const openBtns = document.querySelectorAll('.open-modal');
+
+            openBtns.forEach(btn => {
+                btn.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    modal.style.display = 'block';
+                    document.body.style.overflow = 'hidden';
+                });
+            });
+
+            if(closeBtn) {
+                closeBtn.addEventListener('click', function() {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                });
+            }
+
+            window.addEventListener('click', function(e) {
+                if (e.target == modal) {
+                    modal.style.display = 'none';
+                    document.body.style.overflow = 'auto';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
