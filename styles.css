@@ -114,6 +114,21 @@ a {
     overflow: hidden;
 }
 
+.hero-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 18px;
+    border-radius: var(--radius-pill);
+    background: rgba(227, 24, 55, 0.08);
+    color: var(--swig-red);
+    font-size: 0.9rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin-bottom: 20px;
+}
+
 .hero-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -139,6 +154,38 @@ a {
     max-width: 90%;
 }
 
+.hero-feature-list {
+    list-style: none;
+    display: grid;
+    gap: 14px;
+    margin: 0 0 36px;
+    padding: 0;
+    max-width: 560px;
+}
+
+.hero-feature-list li {
+    display: flex;
+    align-items: flex-start;
+    gap: 14px;
+    font-size: 1.05rem;
+    font-weight: 600;
+    color: var(--text-main);
+}
+
+.hero-feature-list i {
+    color: var(--swig-red);
+    margin-top: 4px;
+}
+
+.hero-note {
+    margin-top: 18px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
 .btn-primary {
     display: inline-block;
     padding: 18px 40px;
@@ -155,6 +202,11 @@ a {
     background-color: var(--swig-red-dark);
     transform: translateY(-2px);
     box-shadow: 0 15px 30px rgba(227, 24, 55, 0.3);
+}
+
+.btn-large {
+    padding: 22px 52px;
+    font-size: 1.05rem;
 }
 
 /* Hero Video */
@@ -178,6 +230,65 @@ a {
     font-weight: 700;
     text-transform: uppercase;
     border: none; /* Removed dashed border for cleaner look */
+}
+
+/* Deck Benefits */
+.deck-benefits-section {
+    padding: 40px 0 100px;
+}
+
+.benefits-panel {
+    background: var(--swig-gray);
+    border-radius: var(--radius-lg);
+    padding: 56px;
+}
+
+.benefits-intro {
+    text-align: center;
+    max-width: 760px;
+    margin: 0 auto 40px;
+}
+
+.benefits-intro h2 {
+    font-size: 3.5rem;
+    line-height: 1;
+    margin-bottom: 16px;
+}
+
+.benefits-intro p {
+    font-size: 1.2rem;
+    color: #666;
+    font-weight: 500;
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+}
+
+.benefit-card {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 28px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.04);
+}
+
+.benefit-card i {
+    font-size: 1.4rem;
+    color: var(--swig-red);
+    margin-bottom: 18px;
+}
+
+.benefit-card h3 {
+    font-size: 1.6rem;
+    margin-bottom: 12px;
+}
+
+.benefit-card p {
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.7;
 }
 
 /* Steps Section (Horizontal Layout) */
@@ -284,6 +395,14 @@ a {
 
 .shop-item:hover {
     transform: translateY(-5px);
+}
+
+.optional-note {
+    max-width: 720px;
+    margin: 18px auto 0;
+    font-size: 1rem;
+    color: #777;
+    font-weight: 600;
 }
 
 .shop-image-placeholder {
@@ -484,10 +603,31 @@ footer {
         margin-left: auto;
         margin-right: auto;
     }
+
+    .hero-feature-list {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .hero-feature-list li {
+        text-align: left;
+    }
     
     .hero-image .image-placeholder,
     .hero-image .hero-video {
         height: 400px;
+    }
+
+    .benefits-panel {
+        padding: 40px 28px;
+    }
+
+    .benefits-intro h2 {
+        font-size: 2.8rem;
+    }
+
+    .benefits-grid {
+        grid-template-columns: 1fr;
     }
 }
 
@@ -498,5 +638,17 @@ footer {
     
     .hero-text h1 {
         font-size: 2.8rem;
+    }
+
+    .hero-eyebrow {
+        font-size: 0.8rem;
+    }
+
+    .benefits-panel {
+        padding: 28px 20px;
+    }
+
+    .benefits-intro h2 {
+        font-size: 2.2rem;
     }
 }
