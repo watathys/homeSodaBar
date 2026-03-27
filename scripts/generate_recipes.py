@@ -3,20 +3,33 @@
 
 import os
 
+# Display names as shown on the site (URL slugs may differ; see SLUG_OVERRIDES).
 RECIPES = [
-    "Golden Hour", "Raspberry Dream", "The Utah Doc", "Islander Doctor", "Southern Gentleman",
+    "Golden Hour", "Raspberry Dream", "Classic Dirty Doctor", "Island Doctor", "Southern Gentleman",
     "Black Forest", "Chocolate Covered Strawberry", "The Founder", "The Millionaire",
     "Just Peachy Coke", "Pineapple Express", "The Loaded Diet", "Vanilla Coke Remix",
-    "Raspberry Royale", "Blackberry Lime", "Baja Gold", "Tiger's Stripe", "Peaches & Cream",
+    "Raspberry Royale", "Blackberry Lime", "Baja Gold", "Tiger\u2019s Stripe", "Peaches & Cream",
     "Key Lime Pie", "Fruit Punch", "Raspberry Dew", "Paradise City", "Pink Lagoon",
     "Hula Girl", "Strawberry Shortcake", "White Wash", "Limeade Crunch", "Peachy Keen",
     "Mojito Mock", "Berry Lemonade", "Tropical Storm", "Wizard Brew", "The Brown Cow",
-    "Toasted Root Beer", "The Garden Spritz", "The Amalfi Splash", "The Napa Soda",
-    "Summer House", "Island Sparkler", "The Bramble Patch", "The Pink Slush",
-    "The Hawaiian High", "Dreamy Orange", "Cosmic Colada", "The Starlet", "The Bullrider",
-    "Electric Peach", "Skinny Kicker", "The Midnight Sky", "The Tropic Thunder",
+    "Toasted Root Beer", "Garden Spritz", "Amalfi Splash", "Napa Soda",
+    "Summer House", "Island Sparkler", "Bramble Patch", "The Pink Slush",
+    "Hawaiian High", "Dreamy Orange", "Cosmic Colada", "The Starlet", "The Bullrider",
+    "Electric Peach", "Skinny Kicker", "Midnight Sky", "Tropic Thunder",
     "The White Flight", "Neon Nectar",
 ]
+
+# Filenames that do not match the default slug(display_name).
+SLUG_OVERRIDES = {
+    "Island Doctor": "islander-doctor",
+    "Garden Spritz": "the-garden-spritz",
+    "Amalfi Splash": "the-amalfi-splash",
+    "Napa Soda": "the-napa-soda",
+    "Bramble Patch": "the-bramble-patch",
+    "Hawaiian High": "the-hawaiian-high",
+    "Midnight Sky": "the-midnight-sky",
+    "Tropic Thunder": "the-tropic-thunder",
+}
 
 # Recipes that have YouTube Shorts (video ID)
 VIDEO_IDS = {
@@ -39,7 +52,11 @@ VIDEO_PLACEHOLDER = """                <div class="video-placeholder">
 
 
 def slug(recipe: str) -> str:
-    return recipe.lower().replace(" ", "-").replace("&", "and").replace("'", "").replace("'", "")
+    if recipe in SLUG_OVERRIDES:
+        return SLUG_OVERRIDES[recipe]
+    s = recipe.lower().replace(" ", "-").replace("&", "and")
+    s = s.replace("'", "").replace("\u2019", "")
+    return s
 
 
 def video_object_schema(recipe_name: str, video_id: str) -> str:
