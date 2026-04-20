@@ -10,6 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "How to Make a Berry Lemonade Dirty Soda",
+      "description": "A silent, aesthetic video guide demonstrating how to mix a sweet and tart Berry Lemonade dirty soda with Sprite, berry syrups, and fresh lemon.",
+      "thumbnailUrl": "https://homesodabar.com/images/berry-lemonade-thumbnail.jpg",
+      "uploadDate": "2026-04-20T14:00:00-06:00",
+      "duration": "PT45S",
+      "contentUrl": "https://homesodabar.com/videos/berry-lemonade-dirty-soda.mp4",
+      "hasPart": [
+        {
+          "@type": "Clip",
+          "name": "Adding Pebble Ice and Fresh Lemon",
+          "startOffset": 0,
+          "endOffset": 15,
+          "url": "https://homesodabar.com/videos/berry-lemonade-dirty-soda.mp4#t=0,15"
+        },
+        {
+          "@type": "Clip",
+          "name": "Pouring the Carbonated Soda",
+          "startOffset": 15,
+          "endOffset": 25,
+          "url": "https://homesodabar.com/videos/berry-lemonade-dirty-soda.mp4#t=15,25"
+        },
+        {
+          "@type": "Clip",
+          "name": "Syrup Gradient and Final Mix",
+          "startOffset": 25,
+          "endOffset": 45,
+          "url": "https://homesodabar.com/videos/berry-lemonade-dirty-soda.mp4#t=25,45"
+        }
+      ]
+    }
+    </script>
     
     <style>
         .recipe-page {
@@ -50,11 +85,70 @@
             justify-content: center;
             padding: 40px;
         }
-        .video-placeholder {
+        .recipe-blog {
+            max-width: 720px;
+            margin: 60px auto 0;
+            text-align: left;
+        }
+        .recipe-blog h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 16px;
+            color: var(--swig-red);
+            border-bottom: 2px solid var(--swig-gray);
+            padding-bottom: 10px;
+        }
+        .recipe-blog h2:first-of-type {
+            margin-top: 0;
+        }
+        .recipe-blog p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .recipe-blog ul {
+            margin: 16px 0 24px;
+            padding-left: 24px;
+        }
+        .recipe-blog li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 8px;
+        }
+        .recipe-blog .flavor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin: 20px 0 30px;
+        }
+        .recipe-blog .flavor-item {
+            background: var(--swig-gray);
+            padding: 16px;
+            border-radius: var(--radius-md);
             text-align: center;
-            color: #666;
+        }
+        .recipe-blog .flavor-item strong {
+            display: block;
             font-size: 1.2rem;
-            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .recipe-blog .cta-box {
+            background: var(--swig-red);
+            color: white;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin-top: 50px;
+        }
+        .recipe-blog .cta-box h2 {
+            color: white;
+            border: none;
+            margin: 0 0 16px;
+        }
+        .recipe-blog .cta-box p {
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 24px;
         }
         @media (max-width: 600px) {
             .recipe-header h1 {
@@ -80,15 +174,53 @@
         <div class="recipe-page">
             <!-- Video at very top for Search Loop / faster indexing -->
             <div class="video-container">
-                                <div class="video-placeholder">
-                    Instructional video still being created, check back soon
-                </div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/7kNSas-orpU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player"></iframe>
             </div>
 
             <div class="recipe-header">
                 <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Recipes</a>
                 <h1>Berry Lemonade</h1>
             </div>
+
+            <article class="recipe-blog">
+                <p>If you are hunting for the absolute best, thirst-quenching dirty soda recipe, you are in the exact right place because the KazziSoda team is broadcasting straight from the soda capital of the world: Provo, Utah. We know precisely what it takes to craft the ultimate afternoon pick-me-up. This Berry Lemonade variation is a pure, unapologetic sugar rush designed for maximum flavor and zero compromises.</p>
+
+                <h2>What is a Berry Lemonade Dirty Soda?</h2>
+                <p>A Berry Lemonade dirty soda is a sweet and tart beverage crafted by blending lemon-lime soda with rich strawberry and raspberry syrups, finished with a heavy squeeze of fresh citrus. This vibrant, fruit-forward drink balances a crisp carbonated bite with dense berry flavors, making it a refreshing staple for warm weather.</p>
+                <p>This specific drink is the ultimate picnic staple, perfectly suited for hot afternoons and long weekend drives. It hits a solid 4 out of 5 on the sweet scale and a 4 out of 5 on the tart scale, delivering a sharp, sugary punch that instantly cures a midday slump. We aren't cutting calories here, and we certainly aren't pretending this is a health food. We are building a vibrant, high-sugar, aesthetic masterpiece meant to be savored to the very last drop.</p>
+                
+                <div class="flavor-grid">
+                    <div class="flavor-item"><strong>Sweetness</strong> 4/5</div>
+                    <div class="flavor-item"><strong>Tartness</strong> 4/5</div>
+                    <div class="flavor-item"><strong>Creaminess</strong> 1/5</div>
+                </div>
+
+                <h2>Ingredients</h2>
+                <ul>
+                    <li><strong>Sprite</strong> (or your preferred lemon-lime soda)</li>
+                    <li><strong>Strawberry Syrup</strong></li>
+                    <li><strong>Raspberry Syrup</strong></li>
+                    <li><strong>Fresh Lemon</strong></li>
+                </ul>
+
+                <h2>Instructions</h2>
+                <ol style="margin: 16px 0 24px; padding-left: 24px;">
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Fill your favorite glass to the very brim with soft, crunchy pebble ice.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Slice your fresh lemon and squeeze the juice directly over the ice, letting the pulp sit on top.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Pour the Sprite over the ice, listening to the sharp, fizzy crackle as the heavy carbonation hits the freezing glass.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Pour in the strawberry and raspberry syrups. <strong>Personal Visual Tip:</strong> Do not stir immediately. Watch how the vivid red, heavy syrups sink through the clear, bubbling soda, pooling around the pebble ice to create a stunning, bleeding two-toned gradient perfect for your aesthetic feed.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Give it a gentle mix with your straw to blend the tart lemon with the sweet berry base, and take that first icy, crisp sip.</li>
+                </ol>
+
+                <h2>Mix It Up</h2>
+                <p>Want to mellow out the sharp citrus tartness? Add a hearty pump of Vanilla Syrup for a much smoother, less abrasive finish. If you want to bump up the Creamy Index from a 1 to a classic dirty soda richness, pour a splash of heavy cream over the top right before serving. The visual sensory experience of watching thick, rich cream slowly spiderweb and sink into the bright red, highly carbonated soda is an absolute feast for the eyes.</p>
+
+                <div class="cta-box">
+                    <h2>Upgrade Your Home Soda Bar</h2>
+                    <p>Ready to stop guessing measurements and start mixing like a Provo pro? It is time to upgrade your home soda bar. Grab the physical Dirty Soda Deck at homesodabar.com. These premium, spill-proof recipe cards give you the exact formulas for every aesthetic drink you can imagine, bringing the professional soda shop experience right to your kitchen counter.</p>
+                    <a href="javascript:void(0)" class="btn btn-white open-modal" style="display: inline-block; padding: 16px 40px; background-color: white; color: var(--swig-red); font-weight: 800; border-radius: var(--radius-pill); text-transform: uppercase;">Get the Recipe Deck</a>
+                </div>
+            </article>
         </div>
     </div>
 

@@ -10,6 +10,41 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="../styles.css">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "How to Make an Island Sparkler Dirty Soda",
+      "description": "A silent, aesthetic video guide demonstrating how to mix a tropical Island Sparkler dirty soda using ginger ale, pineapple syrup, and heavy coconut cream.",
+      "thumbnailUrl": "https://homesodabar.com/images/island-sparkler-thumbnail.jpg",
+      "uploadDate": "2026-04-20T14:45:00-06:00",
+      "duration": "PT45S",
+      "contentUrl": "https://homesodabar.com/videos/island-sparkler-dirty-soda.mp4",
+      "hasPart": [
+        {
+          "@type": "Clip",
+          "name": "Adding Pebble Ice and Ginger Ale",
+          "startOffset": 0,
+          "endOffset": 15,
+          "url": "https://homesodabar.com/videos/island-sparkler-dirty-soda.mp4#t=0,15"
+        },
+        {
+          "@type": "Clip",
+          "name": "Pumping the Pineapple Syrup",
+          "startOffset": 15,
+          "endOffset": 25,
+          "url": "https://homesodabar.com/videos/island-sparkler-dirty-soda.mp4#t=15,25"
+        },
+        {
+          "@type": "Clip",
+          "name": "Coconut Cream Pour and Final Mix",
+          "startOffset": 25,
+          "endOffset": 45,
+          "url": "https://homesodabar.com/videos/island-sparkler-dirty-soda.mp4#t=25,45"
+        }
+      ]
+    }
+    </script>
     
     <style>
         .recipe-page {
@@ -50,11 +85,70 @@
             justify-content: center;
             padding: 40px;
         }
-        .video-placeholder {
+        .recipe-blog {
+            max-width: 720px;
+            margin: 60px auto 0;
+            text-align: left;
+        }
+        .recipe-blog h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 16px;
+            color: var(--swig-red);
+            border-bottom: 2px solid var(--swig-gray);
+            padding-bottom: 10px;
+        }
+        .recipe-blog h2:first-of-type {
+            margin-top: 0;
+        }
+        .recipe-blog p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #444;
+            margin-bottom: 20px;
+        }
+        .recipe-blog ul {
+            margin: 16px 0 24px;
+            padding-left: 24px;
+        }
+        .recipe-blog li {
+            font-size: 1.1rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 8px;
+        }
+        .recipe-blog .flavor-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 16px;
+            margin: 20px 0 30px;
+        }
+        .recipe-blog .flavor-item {
+            background: var(--swig-gray);
+            padding: 16px;
+            border-radius: var(--radius-md);
             text-align: center;
-            color: #666;
+        }
+        .recipe-blog .flavor-item strong {
+            display: block;
             font-size: 1.2rem;
-            font-weight: 600;
+            margin-bottom: 4px;
+        }
+        .recipe-blog .cta-box {
+            background: var(--swig-red);
+            color: white;
+            padding: 40px;
+            border-radius: var(--radius-lg);
+            text-align: center;
+            margin-top: 50px;
+        }
+        .recipe-blog .cta-box h2 {
+            color: white;
+            border: none;
+            margin: 0 0 16px;
+        }
+        .recipe-blog .cta-box p {
+            color: rgba(255,255,255,0.95);
+            margin-bottom: 24px;
         }
         @media (max-width: 600px) {
             .recipe-header h1 {
@@ -80,15 +174,52 @@
         <div class="recipe-page">
             <!-- Video at very top for Search Loop / faster indexing -->
             <div class="video-container">
-                                <div class="video-placeholder">
-                    Instructional video still being created, check back soon
-                </div>
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/IJtkfAiNX_I" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen referrerpolicy="strict-origin-when-cross-origin" title="YouTube video player"></iframe>
             </div>
 
             <div class="recipe-header">
                 <a href="../index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Back to Recipes</a>
                 <h1>Island Sparkler</h1>
             </div>
+
+            <article class="recipe-blog">
+                <p>If you are hunting for a tropical, vacation-ready dirty soda recipe, you have landed in the exact right place because the KazziSoda team is broadcasting straight from the soda capital of the world: Provo, Utah. We know exactly how to turn a classic fountain drink into an island getaway. The Island Sparkler is a heavy, unapologetic sugar rush built for pure, creamy indulgence.</p>
+
+                <h2>What is an Island Sparkler Dirty Soda?</h2>
+                <p>An Island Sparkler dirty soda is a rich, tropical beverage crafted by blending the sharp, aromatic bite of ginger ale with sweet pineapple syrup and thick coconut cream. This visually stunning drink balances zesty spice with dense, fruity sweetness and a heavy dairy finish, creating a luxurious, resort-style refreshment.</p>
+                <p>This specific drink flawlessly channels the ultimate Resort Life vibe, bringing the poolside aesthetic straight to your kitchen. It hits a solid 4 out of 5 on the sweet scale and a 3 out of 5 on the tart scale, followed by a heavy 4 out of 5 on the creamy index, delivering a deeply satisfying, velvety mouthfeel. We are not cutting corners or pretending this is a health food. We are building a vivid, high-sugar, aesthetic masterpiece meant to be savored to the very last drop.</p>
+                
+                <div class="flavor-grid">
+                    <div class="flavor-item"><strong>Sweetness</strong> 4/5</div>
+                    <div class="flavor-item"><strong>Tartness</strong> 3/5</div>
+                    <div class="flavor-item"><strong>Creaminess</strong> 4/5</div>
+                </div>
+
+                <h2>Ingredients</h2>
+                <ul>
+                    <li><strong>Ginger Ale</strong></li>
+                    <li><strong>Pineapple Syrup</strong></li>
+                    <li><strong>Coconut Cream (Coco Real)</strong></li>
+                </ul>
+
+                <h2>Instructions</h2>
+                <ol style="margin: 16px 0 24px; padding-left: 24px;">
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Fill your favorite heavy glass to the very brim with soft, crunchy pebble ice.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Pour the ginger ale over the ice, listening to the sharp, snapping fizz as the heavily carbonated, spiced soda hits the freezing glass.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Pump the sweet pineapple syrup directly into the bubbling ginger ale, giving it a quick stir to integrate the tropical base.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Squeeze a heavy layer of thick coconut cream (Coco Real) directly over the top of the drink. <strong>Personal Visual Tip:</strong> Do not stir immediately. Watch closely as the dense, stark white coconut cream slowly fractures and sinks down through the golden ginger ale, clinging to the pebble ice and creating a mesmerizing, cloud-like gradient that is absolutely perfect for a silent aesthetic video.</li>
+                    <li style="font-size: 1.1rem; line-height: 1.8; color: #444; margin-bottom: 12px;">Give it a steady swirl with your straw to fully integrate the heavy coconut cream with the spiced pineapple soda, and take that first icy, luxurious sip.</li>
+                </ol>
+
+                <h2>Mix It Up</h2>
+                <p>Looking to change the flavor dynamics? Swap out the ginger ale for plain sparkling water and add a fresh squeeze of lime to create a "Skinny Tiki." The sharp, acidic bite of the fresh lime slices right through the thick coconut cream, while the unflavored sparkling water lets the pure pineapple and coconut notes take center stage for a fiercely carbonated, zesty finish.</p>
+
+                <div class="cta-box">
+                    <h2>Upgrade Your Home Soda Bar</h2>
+                    <p>Ready to stop guessing your syrup ratios and upgrade your home soda bar today? Grab The Original Dirty Soda Deck at homesodabar.com. Featuring 52 waterproof plastic cards, this premium recipe deck gives you the exact, perfectly balanced formulas for every aesthetic drink you can imagine, bringing the professional Utah soda shop experience straight to your kitchen counter.</p>
+                    <a href="javascript:void(0)" class="btn btn-white open-modal" style="display: inline-block; padding: 16px 40px; background-color: white; color: var(--swig-red); font-weight: 800; border-radius: var(--radius-pill); text-transform: uppercase;">Get the Recipe Deck</a>
+                </div>
+            </article>
         </div>
     </div>
 
